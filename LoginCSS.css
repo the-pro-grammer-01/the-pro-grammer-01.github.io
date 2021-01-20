@@ -1,0 +1,99 @@
+body, input, button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#logo-container {
+    width: 7.5%;
+    padding: 10;
+}
+
+#flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+#middle-panel {
+    background-color: #099dfd;
+    width: 80%;
+    height: 75%;
+    margin-top: 4.5vh;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0,0,0,.05);
+}
+
+
+#left-panel {
+    max-width: 50%;
+}
+
+#left-content {
+    text-align: center;
+}
+
+#right-panel {
+    background-color: white;
+    flex: 2;
+    width: 50%;
+}
+
+
+#video-img {
+    padding-top: 15%;
+    width: 65%;
+    height: auto;
+}
+
+#slogan {
+    padding-top: 20%;
+    margin: 20;
+}
+
+#slogan-text {
+    color: white;
+    font-size: 1.75rem;
+}
+
+#right-content {
+    width: 70%;
+    padding-top: 25%;
+    margin: 0 auto;
+}
+
+#login-msg {
+    font-size: 1.75rem;
+    text-align: left;
+}
+
+#colored {
+    color: #099dfd;
+}
+
+.login-forms {
+    width: 100%;
+    border-radius: 5px;
+    border: #099dfd solid 2px;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+#login-button {
+    background-color: #099dfd;
+    font-size: 1.5rem;
+    padding: 3px 20px 5px 20px;
+    color: white;
+    border-radius: 7px;
+    border: solid #099dfd;
+
+}
+
+#login-button:hover {
+    background-color: #0075c4;
+    border: solid #0075c4;
+}
+
