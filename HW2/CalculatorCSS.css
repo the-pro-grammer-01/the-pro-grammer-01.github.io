@@ -1,0 +1,64 @@
+.error {
+    color: rgba(255, 255, 255, 0.75);
+    border: 2px solid rgb(202, 0, 0);
+    background-color: rgb(211, 57, 57);
+}
+
+input {
+    border-radius: 6px;
+    font-size: 1.25rem;
+    padding: 5px;
+    border: 2px solid rgb(158, 158, 158);
+    background-color: rgb(179, 179, 179);
+    color:white;
+    margin: auto;
+    width: 255px;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+#clear {
+    background-color: rgb(209, 42, 42);
+    border: 2px solid rgb(182, 0, 0);
+}
+
+button {
+    border-radius: 6px;
+    font-size: 1.25rem;
+    padding: 5px;
+    margin-right: 3.8px;
+    background-color: rgb(110, 110, 110);
+    border: 2px solid rgb(75, 75, 75);
+    color:white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 45px;
+}
+
+#calcContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#calcBody {
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+    border-radius: 6px;
+    background-color: gray;
+    box-shadow: 0.25rem 0.25rem 0.5rem black;
+    text-align: center;
+}
+
+#contentContainer {
+    padding: 10px;
+}
+
+#firstNum {
+    margin-right: 2px;
+}
+
+body {
+    background-color: rgb(201, 201, 201);
+}

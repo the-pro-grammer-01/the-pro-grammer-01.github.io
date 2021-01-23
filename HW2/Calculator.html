@@ -1,0 +1,171 @@
+<html>
+
+<head>
+    <title>Homework Calculator</title>
+    <link rel="stylesheet" href="CalculatorCSS.css" />
+</head>
+
+<body>
+    <div id="calcContainer">
+        <div id="calcBody">
+            <div id="contentContainer">
+                <div id="inputs">
+                    <input type="text" placeholder="First Number" id="firstNum" />
+                    <input type="text" placeholder="Second Number" id="secondNum" />
+                </div>
+                <button onClick="add()">+</button>
+                <button onClick="subtract()">-</button>
+                <button onClick="multiply()">x</button>
+                <button onClick="divide()">/</button>
+                <button onClick="clearNums()" id="clear">C</button>
+                <input id="showResult" readonly placeholder="Result" />
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+
+    // CSS changes for errors
+
+    function noError(idName) {
+        document.getElementById(idName).className = "";
+    }
+
+    function noErrorAll() {
+        noError("firstNum");
+        noError("secondNum");
+        noError("showResult");
+    }
+
+    function errorCSS(idName) {
+        document.getElementById(idName).className = "error";
+    }
+
+    // Error messages
+
+    function errorMsg(idName, message) {
+        document.getElementById(idName).value = message;
+    }
+
+    // Checks for valid input
+
+    function isNumber(num, idName) {
+
+        aNum = Number(num);
+
+        passes = true;
+
+        if (Number.isNaN(aNum) || num === "") {
+            errorCSS(idName);
+            errorCSS("showResult");
+            errorMsg(idName, "Please enter a number");
+            passes = false;
+            errorMsg("showResult", "ERROR");
+        }
+        return passes;
+    }
+
+    // Used to avoid division by zero
+
+    function isZero(num) {
+        if (Number(num) === 0) {
+            errorCSS("secondNum");
+            errorCSS("showResult");
+            errorMsg("secondNum", "Cannot divide by 0");
+            errorMsg("showResult", "ERROR");
+            return true;
+        }
+        return false;
+    }
+
+    // Add
+
+    function add() {
+        let no1 = document.getElementById("firstNum").value;
+        let no2 = document.getElementById("secondNum").value;
+
+        if (isNumber(no1, "firstNum")) {
+            if (isNumber(no2, "secondNum")) { // Both numbers viable
+                noErrorAll();
+                let result = Number(no1) + Number(no2);
+                document.getElementById("showResult").value = no1 + " + " + no2 + " = " + result;
+            }
+            noError("firstNum"); // First number viable only
+        }
+        else if (isNumber(no2, "secondNum")) {
+            noError("secondNum"); // Second number viable only
+        }
+
+    }
+
+    // Subtract
+
+    function subtract() {
+        let no1 = document.getElementById("firstNum").value;
+        let no2 = document.getElementById("secondNum").value;
+
+        if (isNumber(no1, "firstNum")) {
+            if (isNumber(no2, "secondNum")) { // Both numbers viable
+                noErrorAll();
+                let result = Number(no1) - Number(no2);
+                document.getElementById("showResult").value = no1 + " - " + no2 + " = " + result;
+            }
+            noError("firstNum"); // First number viable only
+        }
+        else if (isNumber(no2, "secondNum")) {
+            noError("secondNum"); // Second number viable only
+        }
+    }
+
+    // Multiply
+
+    function multiply() {
+        let no1 = document.getElementById("firstNum").value;
+        let no2 = document.getElementById("secondNum").value;
+
+        if (isNumber(no1, "firstNum")) {
+            if (isNumber(no2, "secondNum")) { // Both numbers viable
+                noErrorAll();
+                let result = Number(no1) * Number(no2);
+                document.getElementById("showResult").value = no1 + " x " + no2 + " = " + result;
+            }
+            noError("firstNum"); // First number viable only
+        }
+        if (isNumber(no2, "secondNum")) {
+            noError("secondNum");  // Second number viable only
+        }
+    }
+
+    // Divide
+
+    function divide() {
+        let no1 = document.getElementById("firstNum").value;
+        let no2 = document.getElementById("secondNum").value;
+
+        if (isNumber(no1, "firstNum")) {
+            if (isNumber(no2, "secondNum") && !isZero(no2)) { // Both numbers viable
+                noErrorAll();
+                let result = Number(no1) / Number(no2);
+                document.getElementById("showResult").value = no1 + " / " + no2 + " = " + result;
+            }
+            noError("firstNum"); // First number viable only
+        }
+        else if (isNumber(no2, "secondNum") && !isZero(no2)) {
+            noError("secondNum"); // Second number viable only
+        }
+    }
+
+    // Clear
+
+    function clearNums() {
+        noErrorAll();
+        document.getElementById("firstNum").value = 0;
+        document.getElementById("secondNum").value = 0;
+        document.getElementById("showResult").value = 0;
+    }
+
+</script>
+
+</html>
