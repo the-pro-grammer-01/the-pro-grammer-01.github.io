@@ -1,3 +1,3 @@
 # Agora-Workshop
 
-Assignments for Agora Workshop
+Server for Agora Workshop
