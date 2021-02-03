@@ -1,6 +1,6 @@
-<img width=“964” alt=“java 8 and prio java 8  array review example” src=“https://github.com/the-pro-grammer-01/the-pro-grammer-01.github.io/blob/master/Final/Assets/LoginPage.png”>
+<img src=“https://github.com/the-pro-grammer-01/the-pro-grammer-01.github.io/blob/master/Final/Assets/LoginPage.png”>
 
-<img width=“964” alt=“java 8 and prio java 8  array review example” src=“https://github.com/the-pro-grammer-01/the-pro-grammer-01.github.io/blob/master/Final/Assets/VideoCall.png”>
+<img src=“https://github.com/the-pro-grammer-01/the-pro-grammer-01.github.io/blob/master/Final/Assets/VideoCall.png”>
 
 # Agora-Workshop
 
