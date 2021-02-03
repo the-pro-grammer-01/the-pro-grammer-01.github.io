@@ -1,8 +1,3 @@
-<img width="964" src="https://github.com/the-pro-grammer-01/the-pro-grammer-01.github.io/blob/master/Final/Assets/LoginPage.png">
-
-<img width="964" src="https://github.com/the-pro-grammer-01/the-pro-grammer-01.github.io/blob/master/Final/Assets/VideoCall.png">
-
-
 # Agora-Workshop
 
 # Final Project for Agora Workshop
@@ -18,6 +13,11 @@ Everyone has the option of sharing their screen and showing others what they're 
 
 Just like ducklings, the ultimate goal is to follow the leader, but if you fall behind, it can be to your benefit to focus on someone else--to follow one of the other ducklings--in order to get to where you want to go. 
 
+# Pages
+
+<img width="964" src="https://github.com/the-pro-grammer-01/the-pro-grammer-01.github.io/blob/master/Final/Assets/LoginPage.png">
+
+<img width="964" src="https://github.com/the-pro-grammer-01/the-pro-grammer-01.github.io/blob/master/Final/Assets/VideoCall.png">
 
 # Applications 
 
