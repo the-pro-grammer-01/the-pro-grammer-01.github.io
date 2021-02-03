@@ -1,6 +1,7 @@
-<img src=“https://github.com/the-pro-grammer-01/the-pro-grammer-01.github.io/blob/master/Final/Assets/LoginPage.png”>
+<img width="964" src="https://github.com/the-pro-grammer-01/the-pro-grammer-01.github.io/blob/master/Final/Assets/LoginPage.png">
 
-<img src=“https://github.com/the-pro-grammer-01/the-pro-grammer-01.github.io/blob/master/Final/Assets/VideoCall.png”>
+<img width="964" src="https://github.com/the-pro-grammer-01/the-pro-grammer-01.github.io/blob/master/Final/Assets/VideoCall.png">
+
 
 # Agora-Workshop
 
